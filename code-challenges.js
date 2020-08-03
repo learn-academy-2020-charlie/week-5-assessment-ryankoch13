@@ -78,11 +78,7 @@ const fullHouse = (array) => {
 
     // This last part is a bit unelegant compared to the above logic, but I figured if the counts array has both a 3 and a 2 it must be a full house
 
-    if (counts.includes(3) && counts.includes(2)){
-        return true
-    } else {
-        return false
-    }
+    return (counts.includes(3) && counts.includes(2) ?  true : false )
 }
 
 console.log(fullHouse(hand1))
