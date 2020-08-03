@@ -7,7 +7,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. Rails follows an MVC pattern. What does that mean?
 
-  Your answer:
+  Your answer: Model, view, controller. 
 
   Researched answer:
 
