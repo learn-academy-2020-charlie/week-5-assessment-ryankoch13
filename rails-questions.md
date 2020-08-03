@@ -26,6 +26,8 @@ show - Name of the method in the controller
 
     Add a validates line to the class with the names of all of the columns listed seperated by commas followed by "presence: true"
 
+    validates :shirt, :pants, :shoes
+
 
 6. What is the naming convention for generating a Rails model? What is the naming convention for the table that is generated with this command?
 
