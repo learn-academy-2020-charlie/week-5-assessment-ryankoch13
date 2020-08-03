@@ -68,7 +68,9 @@ var hand3 = [5, 5, 5, 5, 4]
 
 const fullHouse = (array) => {
 
-// Now I'm going to use a map function to look at each value in the array. It took some trouble shooting, but I knew I was going to want to passs the value and the array through the map function. Once inside, I would want to look at the original array and figure out how many times that value occurs in the array. I opted with a filter method, originally thinking I would have an array of arrays that had each value listed inside the number of times they occured. But then I realized I could just chain a length method at the end to output an array of the number of times each value shows up. 
+// Now I'm going to use a map function to look at each value in the array. It took some trouble shooting, but I knew I was going to want to pass the value and the array through the map function. Once inside, I would want to look at the original array and figure out how many times that value occurs in the array. I opted with a filter method, originally thinking I would have an array of arrays that had each value listed inside the number of times they occured. But then I realized I could just chain a length method at the end to output an array of the number of times each value shows up. 
+
+// Basically it is going to look at each value in the array, compare it to the original array, and only return values that match the current values. The last method will count the length of that array, so we will end up with an array that gives the count of the element at each index. 
 
     counts = array.map((value, i, array) =>{
         return array.filter(val => (val === value)).length
